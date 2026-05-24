@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wedding Invitation | Basori & Indah</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:
+      linear-gradient(
+        180deg,
+        #f8fbff 0%,
+        #eef5ff 100%
+      );
+
+      font-family:'Poppins', sans-serif;
+      color:#16385f;
+      overflow-x:hidden;
+      position:relative;
+    }
+
+    body::before{
+      content:'';
+
+      position:fixed;
+
+      width:400px;
+      height:400px;
+
+      background:rgba(109,168,255,0.12);
+
+      border-radius:50%;
+
+      top:-120px;
+      left:-120px;
+
+      filter:blur(80px);
+
+      z-index:-1;
+    }
+
+    body::after{
+      content:'';
+
+      position:fixed;
+
+      width:350px;
+      height:350px;
+
+      background:rgba(130,180,255,0.12);
+
+      border-radius:50%;
+
+      bottom:-100px;
+      right:-100px;
+
+      filter:blur(80px);
+
+      z-index:-1;
+    }
+
+    .invitation{
+      width:100%;
+      max-width:700px;
+      margin:auto;
+
+      background:linear-gradient(
+        180deg,
+        rgba(255,255,255,0.96) 0%,
+        rgba(240,247,255,0.96) 100%
+      );
+
+      position:relative;
+      overflow:hidden;
+
+      box-shadow:
+      0 10px 40px rgba(70,120,200,0.08);
+    }
+
+    section{
+      padding:80px 35px;
+      position:relative;
+      animation:fadeUp 1.5s ease;
+    }
+
+    @keyframes fadeUp{
+      from{
+        opacity:0;
+        transform:translateY(50px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    /* FLOWER */
+
+.flower-back{
+  position:absolute;
+  opacity:1;
+  z-index:0;
+  animation:floating 7s ease-in-out infinite;
+  pointer-events:none;
+
+}
+
+.flower-front{
+  position:absolute;
+  opacity:1;
+  z-index:3;
+  animation:floating2 5s ease-in-out infinite;
+  pointer-events:none;
+
+
+}
+
+/* POSISI BUNGA */
+
+.flower1{
+  top:-80px;
+  left:-120px;
+  width:220px;
+}
+
+.flower2{
+  top:180px;
+  right:-100px;
+  width:180px;
+  transform:rotate(35deg);
+}
+
+.flower3{
+  bottom:250px;
+  left:-90px;
+  width:170px;
+  transform:rotate(-20deg);
+}
+
+.flower4{
+  bottom:-100px;
+  right:-120px;
+  width:240px;
+  transform:rotate(180deg);
+}
+
+.flower5{
+  top:50%;
+  left:40%;
+  width:120px;
+  opacity:0.15;
+}
+
+.flower6{
+  top:80px;
+  left:40%;
+  width:140px;
+  opacity:0.2;
+  transform:rotate(15deg);
+
+  animation:floating3 6s ease-in-out infinite;
+}
+
+.flower7{
+  bottom:80px;
+  right:35%;
+  width:160px;
+  opacity:0.2;
+  transform:rotate(-15deg);
+
+  animation:floating2 8s ease-in-out infinite;
+}
+
+.flower8{
+  top:45%;
+  right:-70px;
+  width:150px;
+  transform:rotate(25deg);
+
+  animation:floating 7s ease-in-out infinite;
+}
+
+.flower9{
+  top:70%;
+  left:-60px;
+  width:140px;
+  transform:rotate(-35deg);
+
+  animation:floating3 5s ease-in-out infinite;
+}
+
+.flower10{
+  top:-30px;
+  right:25%;
+  width:130px;
+  opacity:0.2;
+
+  animation:floating2 9s ease-in-out infinite;
+}
+
+/* ANIMASI */
+
+@keyframes floating{
+  0%{
+    transform:translateY(0px) rotate(0deg);
+  }
+  50%{
+    transform:translateY(-10px) rotate(3deg);
+  }
+  100%{
+    transform:translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes floating2{
+  0%{
+    transform:translateY(0px);
+  }
+  50%{
+    transform:translateY(-15px);
+  }
+  100%{
+    transform:translateY(0px);
+  }
+}
+
+@keyframes floating3{
+  0%{
+    transform:translateY(0px) rotate(0deg);
+  }
+  50%{
+    transform:translateY(-20px) rotate(-5deg);
+  }
+  100%{
+    transform:translateY(0px) rotate(0deg);
+  }
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+  .flower1{
+    width:150px;
+  }
+
+  .flower2{
+    width:120px;
+  }
+
+  .flower3{
+    width:120px;
+  }
+
+  .flower4{
+    width:160px;
+  }
+
+  .flower5{
+    width:90px;
+  }
+
+  .flower6{
+    width:100px;
+  }
+
+  .flower7{
+    width:120px;
+  }
+
+  .flower8{
+    width:100px;
+  }
+
+  .flower9{
+    width:90px;
+  }
+
+  .flower10{
+    width:90px;
+  }
+
+}
+
+    @keyframes floating{
+      0%{
+        transform:translateY(0px) rotate(0deg);
+      }
+      50%{
+        transform:translateY(-10px) rotate(3deg);
+      }
+      100%{
+        transform:translateY(0px) rotate(0deg);
+      }
+    }
+
+    @keyframes floating2{
+      0%{
+        transform:translateY(0px);
+      }
+      50%{
+        transform:translateY(-15px);
+      }
+      100%{
+        transform:translateY(0px);
+      }
+    }
+
+    .center{
+      text-align:center;
+      position:relative;
+      z-index:5;
+      padding-left:25px;
+      padding-right:25px;
+    }
+
+    .bismillah,
+    .opening,
+    .name,
+    .parent,
+    .and,
+    .quote,
+    .arabic,
+    .desc,
+    .date,
+    .countdown-wrapper,
+    .schedule-wrapper,
+    .location,
+    .footer-text,
+    .family,
+    .closing-name{
+      position:relative;
+      z-index:10;
+      max-width:90%;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .bismillah{
+      font-family:'Cormorant Garamond', serif;
+      font-size:24px;
+      margin-bottom:20px;
+      color:#6da8ff;
+    }
+
+    .opening{
+      font-family:'Cormorant Garamond', serif;
+      font-size:22px;
+      line-height:1.9;
+      margin-bottom:40px;
+      color:#16385f;
+    }
+
+    .name{
+      font-family:'Great Vibes', cursive;
+      font-size:78px;
+      color:#16385f;
+      line-height:1.1;
+      margin-top:20px;
+
+      text-shadow:
+      0 0 10px rgba(109,168,255,0.15);
+    }
+
+    .parent{
+      margin-top:12px;
+      font-size:17px;
+      line-height:1.8;
+      color:#35557c;
+    }
+
+    .and{
+      font-size:50px;
+      margin:45px 0;
+      color:#6da8ff;
+      font-family:'Cormorant Garamond', serif;
+    }
+
+    .quote{
+      margin-top:60px;
+      font-size:18px;
+      line-height:2;
+      font-family:'Cormorant Garamond', serif;
+      color:#35557c;
+    }
+
+    .divider{
+      width:120px;
+      height:1px;
+      background:rgba(109,168,255,0.3);
+      margin:35px auto;
+    }
+
+    .arabic{
+      font-size:22px;
+      margin-bottom:25px;
+      color:#6da8ff;
+      font-family:'Cormorant Garamond', serif;
+    }
+
+    .desc{
+      line-height:2;
+      font-size:18px;
+      color:#35557c;
+    }
+
+    .date{
+      margin-top:35px;
+      font-size:38px;
+      font-family:'Cormorant Garamond', serif;
+      font-weight:600;
+      color:#16385f;
+    }
+
+    /* COUNTDOWN */
+
+    .countdown-wrapper{
+      margin-top:40px;
+    }
+
+    .countdown-title{
+      font-size:18px;
+      letter-spacing:2px;
+      margin-bottom:20px;
+      color:#6da8ff;
+    }
+
+    .countdown{
+      display:flex;
+      justify-content:center;
+      gap:15px;
+      flex-wrap:wrap;
+    }
+
+    .time-box{
+      width:90px;
+      padding:20px 10px;
+      background:rgba(255,255,255,0.7);
+
+      border-radius:18px;
+
+      border:1px solid rgba(109,168,255,0.15);
+
+      backdrop-filter:blur(10px);
+
+      box-shadow:
+      0 10px 25px rgba(80,120,200,0.08);
+    }
+
+    .time-box h2{
+      font-size:32px;
+      color:#16385f;
+    }
+
+    .time-box p{
+      margin-top:8px;
+      font-size:13px;
+      color:#6da8ff;
+    }
+
+    /* SCHEDULE */
+
+    .schedule-wrapper{
+      display:flex;
+      justify-content:center;
+      gap:30px;
+      flex-wrap:wrap;
+      margin-top:50px;
+    }
+
+    .schedule{
+      width:240px;
+      background:rgba(255,255,255,0.65);
+      border:1px solid rgba(109,168,255,0.15);
+      padding:25px;
+      border-radius:24px;
+      backdrop-filter:blur(14px);
+
+      box-shadow:
+      0 10px 30px rgba(70,120,200,0.08);
+    }
+
+    .schedule h3{
+      background:#6da8ff;
+      color:white;
+      padding:10px;
+      border-radius:12px;
+      margin-bottom:18px;
+      font-weight:600;
+      letter-spacing:1px;
+    }
+
+    .schedule p{
+      line-height:1.9;
+      font-size:17px;
+      color:#35557c;
+    }
+
+    .location{
+      margin-top:55px;
+      font-size:18px;
+      line-height:2;
+      color:#35557c;
+    }
+
+    /* MAPS */
+
+    .maps-section{
+      margin-top:60px;
+      position:relative;
+      z-index:10;
+    }
+
+    .maps-title{
+      font-size:24px;
+      margin-bottom:25px;
+      color:#6da8ff;
+      font-family:'Cormorant Garamond', serif;
+    }
+
+    .maps-frame{
+      overflow:hidden;
+      border-radius:24px;
+      border:1px solid rgba(109,168,255,0.15);
+
+      box-shadow:
+      0 10px 30px rgba(70,120,200,0.08);
+    }
+
+    .maps-frame iframe{
+      display:block;
+      filter:saturate(1.1) contrast(1);
+    }
+
+    .maps-btn{
+      display:inline-block;
+      margin-top:25px;
+      padding:14px 30px;
+      background:#6da8ff;
+      color:white;
+      text-decoration:none;
+      border-radius:40px;
+      font-weight:600;
+      transition:.3s;
+    }
+
+    .maps-btn:hover{
+      transform:translateY(-3px);
+    }
+
+    .footer-text{
+      margin-top:60px;
+      line-height:2;
+      font-size:18px;
+      color:#35557c;
+    }
+
+    .family{
+      margin-top:50px;
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .family div{
+      flex:1;
+      min-width:220px;
+      font-size:17px;
+      line-height:1.8;
+      color:#35557c;
+    }
+
+    .closing-name{
+      margin-top:50px;
+      font-family:'Great Vibes', cursive;
+      font-size:54px;
+      color:#16385f;
+    }
+
+    .music-btn{
+      position:fixed;
+      bottom:25px;
+      right:25px;
+      width:62px;
+      height:62px;
+      border-radius:50%;
+      border:none;
+      background:#6da8ff;
+      color:white;
+      font-size:22px;
+      cursor:pointer;
+
+      box-shadow:
+      0 10px 30px rgba(70,120,200,0.2);
+
+      z-index:999;
+      animation:pulse 2s infinite;
+    }
+
+    @keyframes pulse{
+      0%{
+        transform:scale(1);
+      }
+      50%{
+        transform:scale(1.08);
+      }
+      100%{
+        transform:scale(1);
+      }
+    }
+
+    /* MOBILE */
+
+    @media(max-width:600px){
+
+      section{
+        padding:65px 22px;
+      }
+
+      .name{
+        font-size:58px;
+      }
+
+      .opening{
+        font-size:18px;
+      }
+
+      .schedule{
+        width:100%;
+      }
+
+      .date{
+        font-size:30px;
+      }
+
+      .flower1{
+        width:150px;
+      }
+
+      .flower2{
+        width:120px;
+      }
+
+      .flower3{
+        width:120px;
+      }
+
+      .flower4{
+        width:160px;
+      }
+
+      .countdown{
+        gap:10px;
+      }
+
+      .time-box{
+        width:75px;
+        padding:15px 8px;
+      }
+
+      .time-box h2{
+        font-size:24px;
+      }
+
+    }
+
+    /* =========================
+   GIFT SECTION
+========================= */
+
+.gift-section{
+  margin-top:70px;
+  position:relative;
+  z-index:10;
+}
+
+.gift-title{
+  font-size:34px;
+  font-family:'Cormorant Garamond', serif;
+  color:#6da8ff;
+  margin-bottom:20px;
+}
+
+.gift-desc{
+  line-height:2;
+  color:#35557c;
+  font-size:17px;
+  max-width:85%;
+  margin:auto;
+}
+
+/* BANK CARD */
+
+.bank-card{
+
+  margin:40px auto 30px;
+
+  width:100%;
+  max-width:350px;
+
+  padding:30px;
+
+  border-radius:28px;
+
+  background:
+  linear-gradient(
+    135deg,
+    rgba(109,168,255,0.9),
+    rgba(170,210,255,0.9)
+  );
+
+  color:white;
+
+  box-shadow:
+  0 15px 40px rgba(109,168,255,0.2);
+
+  position:relative;
+
+  overflow:hidden;
+}
+
+.bank-card::before{
+
+  content:'';
+
+  position:absolute;
+
+  width:180px;
+  height:180px;
+
+  background:rgba(255,255,255,0.15);
+
+  border-radius:50%;
+
+  top:-70px;
+  right:-70px;
+}
+
+.bank-logo{
+  font-size:18px;
+  letter-spacing:3px;
+  margin-bottom:40px;
+  position:relative;
+  z-index:2;
+}
+
+.bank-number{
+  font-size:28px;
+  font-weight:600;
+  letter-spacing:2px;
+  margin-bottom:15px;
+  position:relative;
+  z-index:2;
+}
+
+.bank-name{
+  font-size:17px;
+  opacity:0.95;
+  position:relative;
+  z-index:2;
+}
+
+/* QRIS */
+
+.qris-wrapper{
+
+  margin-top:20px;
+}
+
+.qris-image{
+
+  width:240px;
+
+  max-width:100%;
+
+  border-radius:24px;
+
+  background:white;
+
+  padding:15px;
+
+  box-shadow:
+  0 10px 30px rgba(80,120,200,0.08);
+}
+
+.qris-text{
+
+  margin-top:15px;
+
+  font-size:15px;
+
+  color:#6b7f99;
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+  .gift-title{
+    font-size:28px;
+  }
+
+  .gift-desc{
+    max-width:100%;
+    font-size:16px;
+  }
+
+  .bank-card{
+    padding:25px;
+  }
+
+  .bank-number{
+    font-size:24px;
+  }
+
+  .qris-image{
+    width:210px;
+  }
+
+}
+
+
+  </style>
+</head>
+
+<body>
+
+<div class="invitation">
+
+  <!-- COVER -->
+  <section class="center">
+
+    <img class="flower-back flower1" src="images/asset1.png">
+    <img class="flower-back flower2" src="images/asset2.png">
+    <img class="flower-front flower3" src="images/asset3.png">
+    <img class="flower-front flower4" src="images/asset4.png">
+    <img class="flower-back flower5" src="images/asset5.png">
+
+    <div class="bismillah">
+      “Bismillahirrahmanirrahim”
+    </div>
+
+    <div class="opening">
+      Maha Suci Allah SWT.<br>
+      yang telah menciptakan makhluk-Nya berpasang-pasangan.<br>
+      Ya Allah semoga ridha-Mu tercurah mengiringi pernikahan putra-putri kami :
+    </div>
+
+    <div class="name">Basori Alwi</div>
+
+    <div class="parent">
+      Putra Bpk. Abdul Khawid & Ibu Nurul Fitriyah
+    </div>
+
+    <div class="and">&</div>
+
+    <div class="name">
+      Dwi Indahjuana Novianti
+    </div>
+
+    <div class="parent">
+      Putri Kedua Bpk. Eddy Susanto dan Ibu Lilis Suryani
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="quote">
+      Baarakallahu Laka Wa Baaraka ‘Alaika Wa Jama’a Bainakuma Fii Khoir
+      <br><br>
+
+      “Semoga Allah keberkahan kepadamu atas pernikahan kamu,
+      serta mengumpulkan kalian berdua dalam kebaikan”
+    </div>
+
+  </section>
+
+  <!-- ACARA -->
+  <section class="center">
+
+<!-- FLOWER LAYERS -->
+<img class="flower-back flower1" src="images/asset1.png">
+<img class="flower-back flower2" src="images/asset2.png">
+<img class="flower-front flower3" src="images/asset3.png">
+<img class="flower-front flower4" src="images/asset4.png">
+<img class="flower-back flower5" src="images/asset5.png">
+
+<img class="flower-back flower6" src="images/asset6.png">
+<img class="flower-front flower7" src="images/asset1.png">
+<img class="flower-back flower8" src="images/asset2.png">
+<img class="flower-front flower9" src="images/asset3.png">
+<img class="flower-back flower10" src="images/asset4.png">
+
+    <div class="arabic">
+      Assalamu’alaikum Warahmatullahi Wabarakatuh
+    </div>
+
+    <div class="desc">
+      Dengan memohon Ridho serta Rahmat Allah,<br>
+      kami bermaksud mengundang Bapak/Ibu/Saudara/i<br>
+      untuk dapat menghadiri dan memberikan doa restu<br>
+      pada pernikahan anak kami
+    </div>
+
+    <div class="date">
+      Rabu, 03 Juni 2026
+    </div>
+
+    <!-- COUNTDOWN -->
+    <div class="countdown-wrapper">
+
+      <div class="countdown-title">
+        MENUJU HARI BAHAGIA
+      </div>
+
+      <div class="countdown">
+
+        <div class="time-box">
+          <h2 id="days">0</h2>
+          <p>Hari</p>
+        </div>
+
+        <div class="time-box">
+          <h2 id="hours">0</h2>
+          <p>Jam</p>
+        </div>
+
+        <div class="time-box">
+          <h2 id="minutes">0</h2>
+          <p>Menit</p>
+        </div>
+
+        <div class="time-box">
+          <h2 id="seconds">0</h2>
+          <p>Detik</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- SCHEDULE -->
+    <div class="schedule-wrapper">
+
+      <div class="schedule">
+        <h3>AKAD NIKAH</h3>
+        <p>
+          Pukul :<br>
+          06.30 WIB - Selesai
+        </p>
+      </div>
+
+      <div class="schedule">
+        <h3>RESEPSI</h3>
+        <p>
+          Pukul :<br>
+          11.00 - 15.00 WIB
+        </p>
+      </div>
+
+    </div>
+
+    <!-- LOCATION -->
+    <div class="location">
+      Di Kediaman Mempelai Wanita<br>
+      Jl. Panjaitan Gg. Luntas No.45<br>
+      Citrodiwangsan, Lumajang
+    </div>
+
+    <!-- GOOGLE MAPS -->
+    <div class="maps-section">
+
+      <div class="maps-title">
+        Lokasi Acara
+      </div>
+
+      <div class="maps-frame">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3949.6602514544884!2d113.2199722!3d-8.136027799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMDgnMDkuNyJTIDExM8KwMTMnMTEuOSJF!5e0!3m2!1sid!2sid!4v1779633972723!5m2!1sid!2sid"
+        width="100%"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        width="100%"
+
+
+        </iframe>
+
+      </div>
+
+      <a
+        href="https://maps.app.goo.gl/5S9YctxMDejfqKrK8"
+        target="_blank"
+        class="maps-btn">
+
+        Buka Google Maps
+
+      </a>
+
+    </div>
+
+    <!-- GIFT / QRIS -->
+
+<div class="gift-section">
+
+  <div class="gift-title">
+    Wedding Gift
+  </div>
+
+  <div class="gift-desc">
+    Doa restu Anda merupakan karunia yang sangat berarti bagi kami.
+    Namun jika memberi adalah ungkapan tanda kasih,
+    Anda dapat memberi kado secara cashless.
+  </div>
+
+  <!-- CARD BANK -->
+
+  <div class="bank-card">
+
+    <div class="bank-logo">
+      BANK BCA
+    </div>
+
+    <div class="bank-number">
+      3840070157
+    </div>
+
+    <div class="bank-name">
+      a.n Bashori Alwi
+    </div>
+
+  </div>
+
+  <!-- QR CODE -->
+
+  <div class="qris-wrapper">
+
+    <img src="images/qris.png" class="qris-image">
+
+  </div>
+
+  <div class="qris-text">
+    Scan QR Code untuk transfer hadiah
+  </div>
+
+</div>
+
+    <div class="footer-text">
+      Tiada lain yang dapat kami ucapkan,<br>
+      selain ucapan terimakasih yang tulus atas kehadiran<br>
+      Bapak/Ibu/Saudara/i.
+      <br><br>
+      Wassalamu’alaikum Warahmatullahi Wabarakatuh.
+    </div>
+
+    <div class="family">
+
+      <div>
+        Kel. Besar Bpk. Abdul Khawid<br>
+        dan Ibu Nurul Fitriyah
+      </div>
+
+      <div>
+        Kel. Besar Bpk. Eddy Susanto<br>
+        dan Ibu Lilis Suryani
+      </div>
+
+    </div>
+
+    <div class="closing-name">
+      Basori & Indah
+    </div>
+
+  </section>
+
+</div>
+
+<!-- MUSIC -->
+<button class="music-btn" onclick="toggleMusic()">♫</button>
+
+<audio id="music" loop>
+  <source src="music.mp3" type="audio/mp3">
+</audio>
+
+<script>
+
+  const music = document.getElementById("music");
+  let isPlaying = false;
+
+  function toggleMusic(){
+
+    if(isPlaying){
+      music.pause();
+      isPlaying = false;
+    }else{
+      music.play();
+      isPlaying = true;
+    }
+  }
+
+  // AUTO PLAY SETELAH INTERAKSI PERTAMA
+
+  document.body.addEventListener('click', function(){
+
+    if(!isPlaying){
+      music.play();
+      isPlaying = true;
+    }
+
+  }, { once:true });
+
+  // COUNTDOWN
+
+  const targetDate = new Date("June 3, 2026 06:30:00").getTime();
+
+  setInterval(function(){
+
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+  },1000);
+
+</script>
+
+</body>
+</html>
